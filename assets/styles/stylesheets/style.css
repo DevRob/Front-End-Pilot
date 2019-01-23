@@ -1,0 +1,471 @@
+/* mixins */
+/* line 19, ../SASS/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 23, ../SASS/style.sass */
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* PageHeader styles */
+/* line 29, ../SASS/style.sass */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+/* line 33, ../SASS/style.sass */
+.nav-logo img {
+  max-width: 140px;
+}
+
+/* line 37, ../SASS/style.sass */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/* line 44, ../SASS/style.sass */
+li {
+  float: right;
+  min-width: 100;
+}
+/* line 48, ../SASS/style.sass */
+li a {
+  color: white;
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: bold;
+  color: #444444;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* line 61, ../SASS/style.sass */
+li:first-child a {
+  border-left: 1px solid #E7E7E7;
+}
+
+/* line 65, ../SASS/style.sass */
+li a:hover {
+  background-color: #E7E7E7;
+}
+
+/* line 68, ../SASS/style.sass */
+.active {
+  background-color: #F9F9F9;
+}
+
+/* line 71, ../SASS/style.sass */
+.nav-container {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  height: 101;
+  border: 1px solid #E7E7E7;
+  position: "-webkit-sticky";
+  position: sticky;
+  top: 0px;
+  background-color: #FFFFFF;
+}
+
+/* line 83, ../SASS/style.sass */
+.wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/* line 87, ../SASS/style.sass */
+.slider {
+  width: inherit;
+}
+
+/* line 91, ../SASS/style.sass */
+.slider img {
+  width: 100%;
+}
+
+/* line 94, ../SASS/style.sass */
+.slider-content1, .slider-content2, .slider-content3 {
+  position: relative;
+  text-align: center;
+  object-fit: cover;
+}
+
+/* line 99, ../SASS/style.sass */
+.slider-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 770;
+}
+
+/* line 106, ../SASS/style.sass */
+.slider-title {
+  text-shadow: 0.5px 0.9px 1px rgba(1, 2, 0, 0.15);
+  font-family: Raleway;
+  font-size: 64px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: center;
+  color: #eeeeee;
+}
+
+/* line 118, ../SASS/style.sass */
+.slider-msg {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #eeeeee;
+}
+
+/* slider Styling */
+/* line 131, ../SASS/style.sass */
+.slider-content {
+  display: none;
+}
+
+/* Slideshow container */
+/* line 135, ../SASS/style.sass */
+.slider {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+/* line 141, ../SASS/style.sass */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+/* line 156, ../SASS/style.sass */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+/* line 161, ../SASS/style.sass */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* line 165, ../SASS/style.sass */
+.main-placeholder {
+  width: 1440px;
+  margin: auto;
+  height: 5770px;
+}
+
+/* START FOOTER */
+/* line 171, ../SASS/style.sass */
+.footer-container {
+  height: 140px;
+  background-color: #333333;
+}
+
+/* END FOOTER */
+/* SECTION STYLE
+ * TODO: Format sections
+ * DEBUG: threat eminent
+ */
+ *
+ * /* section grids */
+/* line 184, ../SASS/style.sass */
+.section1, .section2, .section3, .section4, .section5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(150px, auto);
+}
+/* line 188, ../SASS/style.sass */
+.section1 .section-content, .section2 .section-content, .section3 .section-content, .section4 .section-content, .section5 .section-content {
+  margin: 50px;
+}
+
+/* line 192, ../SASS/style.sass */
+.section1 .section-content, .section4 .section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 70px;
+}
+
+/* TODO: Fix section 1 Footer width issue. Cannot set as fix pixel */
+/* line 199, ../SASS/style.sass */
+.section1 .section-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1440px;
+}
+
+/* line 205, ../SASS/style.sass */
+.section2 .section-content, .section3 .section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* line 210, ../SASS/style.sass */
+.section5 .section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* line 214, ../SASS/style.sass */
+.section-footer {
+  background-color: #444444;
+}
+
+/* line 218, ../SASS/style.sass */
+.section3 .section-footer {
+  background-color: #dddddd;
+}
+
+/* section-footer */
+/* line 223, ../SASS/style.sass */
+.section1 .section-footer {
+  height: 400;
+}
+
+/* line 227, ../SASS/style.sass */
+.section2 .section-footer {
+  height: 0;
+}
+
+/* line 231, ../SASS/style.sass */
+.section3 .section-footer {
+  height: 245;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.9;
+  letter-spacing: 1.1px;
+  text-align: center;
+  color: #333333;
+}
+
+/* line 244, ../SASS/style.sass */
+.section4 .section-footer {
+  height: 500;
+}
+
+/* line 247, ../SASS/style.sass */
+.section-content {
+  margin-bottom: 70px;
+}
+
+/* section text */
+/* line 251, ../SASS/style.sass */
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.03;
+  letter-spacing: normal;
+  color: #444444;
+  padding: 100px 30px 30px;
+  text-align: center;
+}
+
+/* line 262, ../SASS/style.sass */
+.section-msg {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #444444;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 275, ../SASS/style.sass */
+.section-article h2 {
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #444444;
+}
+/* line 286, ../SASS/style.sass */
+.section-article p {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  color: #999999;
+}
+
+/* line 296, ../SASS/style.sass */
+.heart-icon {
+  display: inline-block;
+  border-radius: 50px;
+  color: #ffffff;
+  height: 100px;
+  width: 100px;
+  background-color: #13bd9e;
+  margin: 30px;
+  text-align: center;
+}
+
+/* line 306, ../SASS/style.sass */
+.fa-heart {
+  position: relative;
+  top: 55%;
+  -webkit-transform: translateY(-55%);
+  -ms-transform: translateY(-55%);
+  transform: translateY(-55%);
+  font-size: 40;
+}
+
+/* line 310, ../SASS/style.sass */
+.rectangle {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 8px auto;
+  height: 0;
+  width: 100%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 2px solid #aaaaaa;
+  border-bottom: 2px solid #ffffff;
+  width: 40px;
+  height: 2px;
+  background-color: #333333;
+  margin: 20px 0 20px 0;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 330, ../SASS/style.sass */
+.rectangle_white {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 8px auto;
+  height: 0;
+  width: 100%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 2px solid #ffffff;
+  width: 40px;
+  height: 2px;
+  background-color: #333333;
+  margin: 20px 0 20px 0;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 350, ../SASS/style.sass */
+.section1 h1, .section1 h2, .section1 p {
+  text-align: left;
+}
+/* line 352, ../SASS/style.sass */
+.section1 h2 {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.69;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #333333;
+}
+
+/* line 363, ../SASS/style.sass */
+.section1 p {
+  max-width: 350px;
+}
+/* line 365, ../SASS/style.sass */
+.section1 .footer-article {
+  padding: 130px;
+}
+/* line 367, ../SASS/style.sass */
+.section1 .footer-article h1 {
+  font-family: Raleway;
+  font-size: 56px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.66;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+/* line 377, ../SASS/style.sass */
+.section1 .footer-article h2 {
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.47;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 388, ../SASS/style.sass */
+.section4 {
+  text-align: center;
+}
+/* line 390, ../SASS/style.sass */
+.section4 h2 {
+  padding: 18px;
+}
